@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="是否打开其它应用的设置选项" android:icon="@mipmap/ic_launcher">
+
+
+    <SwitchPreference android:defaultValue="false"
+        android:key="isOpen"
+        android:title="是否打开">
+    </SwitchPreference>
+    <CheckBoxPreference android:title="是否选择"></CheckBoxPreference>
+</PreferenceCategory>
+</PreferenceScreen>
