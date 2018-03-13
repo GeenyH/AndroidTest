@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +14,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 import net.xinglian.myapplication.floatWindow.FloatService;
+import net.xinglian.myapplication.zhy_dialogfragment.FragmentMainActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main0);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -50,6 +53,65 @@ public class MainActivity extends AppCompatActivity
                 startService(new Intent(MainActivity.this, FloatService.class));
             }
         });
+
+        (findViewById(R.id.setting)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SettingActivity.class));
+            }
+        });
+        (findViewById(R.id.test_viewpager)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ViewPagerActivity.class));
+            }
+        });
+        (findViewById(R.id.location)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, LocationActivity.class));
+            }
+        });
+//        (findViewById(R.id.sqliteRoom)).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(MainActivity.this, SQLiteRoomActivity.class));
+//            }
+//        });
+        (findViewById(R.id.pushKeyboroad)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PushKeyBoroadActivity.class));
+            }
+        });
+        (findViewById(R.id.fragment)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, FragmentMainActivity.class));
+            }
+        });
+        (findViewById(R.id.amap)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AmapActivity.class));
+            }
+        });
+        (findViewById(R.id.fragmentTest)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, net.xinglian.myapplication.FragmentActivity.class));
+            }
+        });
+        (findViewById(R.id.show_keyboard)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                KeyboardUtil.shared(MainActivity.this,((EditText)findViewById(R.id.show_keyboard))).showKeyboard();
+            }
+        });
+    }
+    public void aabbcc(View v){
+
     }
 
     @Override
@@ -65,7 +127,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.main0, menu);
         return true;
     }
 

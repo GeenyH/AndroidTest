@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.xinglian.myapplication">
 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="6c243bd50c71d5a036e0a1bb680b4b72">
+
+        </meta-data>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -19,7 +27,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".floatWindow.FloatService"></service>
+
+        <service android:name=".floatWindow.FloatService" />
+        <activity android:name=".FragmentActivity"></activity>
+        <activity android:name=".viewpagerapp.MainActivity" />
+        <activity android:name=".viewpagerapp.LanuchActivity" />
+        <activity android:name=".AmapActivity" />
+        <activity android:name=".viewpagerapp.MyFragmentActivity" />
+        <activity android:name=".viewpagerapp.MyTabActivity" />
+        <activity android:name=".viewpagerapp.TestActivity" />
+        <activity android:name=".ViewPagerActivity" />
+        <activity android:name=".zhy_dialogfragment.FragmentMainActivity" />
+        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".PushKeyBoroadActivity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
 </manifest>

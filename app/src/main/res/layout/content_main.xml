@@ -1,16 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="net.xinglian.myapplication.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
 <Button
     android:id="@+id/test_float_win"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="测试悬浮窗"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/test_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试viewpager"/>
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试setting_preference"/>
+    <Button
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试location"/>
+    <Button
+        android:id="@+id/pushKeyboroad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试键盘托起"/>
+
+    <!--<net.xinglian.myapplication.customview.geenyview-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:Geeny_title="Geeny_title_test"-->
+        <!--app:Geeny_titleTextColor="@color/colorPrimary"-->
+        <!--app:Geeny_titleTextSize="46dp"-->
+        <!--/>-->
+
+    <Button
+        android:id="@+id/sqliteRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试sqliteRoom"/>
+    <Button
+        android:id="@+id/fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试fragment"/>
+    <Button
+        android:id="@+id/amap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试AMap"/>
+    <Button
+        android:id="@+id/fragmentTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试Fragment"/>
+    <EditText
+        android:id="@+id/show_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

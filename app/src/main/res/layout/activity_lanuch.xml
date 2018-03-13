@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最简单的ViewPager" 
+        android:id="@+id/btn1"
+        android:onClick="mybtn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带标题的ViewPager" 
+        android:id="@+id/btn2"
+        android:onClick="mybtn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义标题的ViewPager" 
+        android:id="@+id/btn3"
+        android:onClick="mybtn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用Fragment的ViewPager" 
+        android:id="@+id/btn4"
+        android:onClick="mybtn"/>
+
+</LinearLayout>

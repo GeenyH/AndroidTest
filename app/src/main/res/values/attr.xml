@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="Geeny_title" format="string" />
+    <attr name="Geeny_titleTextColor" format="color" />
+    <attr name="Geeny_titleTextSize" format="dimension" />
+
+    <declare-styleable name="geenyview">
+        <attr name="Geeny_title" />
+        <attr name="Geeny_titleTextColor" />
+        <attr name="Geeny_titleTextSize" />
+    </declare-styleable>
+</resources>
